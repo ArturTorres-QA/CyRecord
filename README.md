@@ -127,5 +127,3 @@ cy.get('input[name="email"]').type('usuario@exemplo.com');
 > Sim, desde que você tenha permissão para acessar o site.
 
 ---
-
-Se precisar de mais exemplos, instruções ou tiver dúvidas, abra uma issue ou entre em contato! 
