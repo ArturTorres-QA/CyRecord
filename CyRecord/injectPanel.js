@@ -112,7 +112,7 @@ if (!window.cypressRecorderPanelInjected) {
     btnClose.textContent = '×'; // Símbolo X
     btnClose.style.fontSize = '22px';
     btnClose.style.background = 'transparent';
-    btnClose.style.color = blue;
+    btnClose.style.color = '#fff';
     btnClose.style.border = 'none';
     btnClose.style.cursor = 'pointer';
     btnClose.style.marginLeft = '10px';
