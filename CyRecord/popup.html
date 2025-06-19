@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>CyRecord - QA</title>
+  <style>
+    body {
+      width: 600px;
+      height: 500px;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      text-align: center;
+      color: #222;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    button#stop {
+      background-color: #f44336;
+    }
+
+    button#stop:hover {
+      background-color: #d32f2f;
+    }
+
+    button#download {
+      background-color: #2196F3;
+    }
+
+    button#download:hover {
+      background-color: #1976D2;
+    }
+
+    textarea {
+      width: 100%;
+      height: 280px;
+      padding: 15px;
+      font-size: 14px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      resize: none;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Artur QA Recorder</h1>
+  <div class="button-group">
+    <button id="start">🎬 Iniciar Gravação</button>
+    <button id="stop">🛑 Parar Gravação</button>
+    <button id="download">⬇️ Exportar  Código</button>
+  </div>
+  <textarea id="output" placeholder="// Código Cypress será exibido aqui..."></textarea>
+  <script src="popup.js"></script>
+</body>
+</html>

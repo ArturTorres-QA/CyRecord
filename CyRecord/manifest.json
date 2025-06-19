@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "CyRecord - Artur QA",
+  "version": "1.1",
+  "description": "Grava todas as ações e gera comandos Cypress .",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Abrir painel de gravação"
+  }
+} 
