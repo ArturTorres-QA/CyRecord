@@ -5,7 +5,7 @@
 ## 📚 Documentação Completa 
 
 ### 🆕 Para Usuários Leigos (Recomendado)
-- **[📖 Guia Completo do Usuário](Doc\GUIA-COMPLETO-USUARIO.md)** - Documentação detalhada e amigável
+- **[📖 Guia Completo do Usuário](Doc/GUIA-COMPLETO-USUARIO.md)** - Documentação detalhada e amigável
 - **[⚡ Guia Rápido](Doc/GUIA-RAPIDO.md)** - Referência rápida para consulta
 - **[🎯 Exemplo Prático](Doc/EXEMPLO-PRATICO.md)** - Tutorial passo a passo
 
@@ -180,8 +180,8 @@ CyRecord/
 ├── background.js         # Script de background
 ├── explicacao-tecnica.md # Documentação técnica detalhada
 ├── manifest-documentation.md # Documentação do manifest
-├── documentações para usuários/  # Documentação para usuários leigos
-│   ├── GUIA-USUARIO-LEIGO.md # Guia completo para usuários leigos
+├── Doc/                    # Documentação para usuários leigos
+│   ├── GUIA-COMPLETO-USUARIO.md # Guia completo para usuários leigos
 │   ├── GUIA-RAPIDO.md        # Guia rápido de referência
 │   └── EXEMPLO-PRATICO.md    # Exemplo prático de uso
 └── icons/                # Ícones da extensão
@@ -206,9 +206,9 @@ Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes
 Se você encontrar algum problema ou tiver sugestões:
 
 1. **Consulte a documentação** primeiro:
-   - [Guia Completo do Usuário](documentações%20para%20usuários/GUIA-USUARIO-LEIGO.md)
-   - [Guia Rápido](documentações%20para%20usuários/GUIA-RAPIDO.md)
-   - [Exemplo Prático](documentações%20para%20usuários/EXEMPLO-PRATICO.md)
+   - [Guia Completo do Usuário](Doc/GUIA-COMPLETO-USUARIO.md)
+   - [Guia Rápido](Doc/GUIA-RAPIDO.md)
+   - [Exemplo Prático](Doc/EXEMPLO-PRATICO.md)
 
 2. **Se ainda tiver dúvidas**:
    - Abra uma issue no GitHub
