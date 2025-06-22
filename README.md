@@ -5,9 +5,9 @@
 ## 📚 Documentação Completa
 
 ### 🆕 Para Usuários Leigos (Recomendado)
-- **[📖 Guia Completo do Usuário](GUIA-USUARIO-LEIGO.md)** - Documentação detalhada e amigável
-- **[⚡ Guia Rápido](GUIA-RAPIDO.md)** - Referência rápida para consulta
-- **[🎯 Exemplo Prático](EXEMPLO-PRATICO.md)** - Tutorial passo a passo
+- **[📖 Guia Completo do Usuário](documentações%20para%20usuários/GUIA-USUARIO-LEIGO.md)** - Documentação detalhada e amigável
+- **[⚡ Guia Rápido](documentações%20para%20usuários/GUIA-RAPIDO.md)** - Referência rápida para consulta
+- **[🎯 Exemplo Prático](documentações%20para%20usuários/EXEMPLO-PRATICO.md)** - Tutorial passo a passo
 
 ### 🔧 Para Desenvolvedores
 - **[📋 Documentação Técnica](explicacao-tecnica.md)** - Detalhes técnicos e arquitetura
@@ -180,9 +180,10 @@ CyRecord/
 ├── background.js         # Script de background
 ├── explicacao-tecnica.md # Documentação técnica detalhada
 ├── manifest-documentation.md # Documentação do manifest
-├── GUIA-USUARIO-LEIGO.md # Guia completo para usuários leigos
-├── GUIA-RAPIDO.md        # Guia rápido de referência
-├── EXEMPLO-PRATICO.md    # Exemplo prático de uso
+├── documentações para usuários/  # Documentação para usuários leigos
+│   ├── GUIA-USUARIO-LEIGO.md # Guia completo para usuários leigos
+│   ├── GUIA-RAPIDO.md        # Guia rápido de referência
+│   └── EXEMPLO-PRATICO.md    # Exemplo prático de uso
 └── icons/                # Ícones da extensão
 ```
 
@@ -205,9 +206,9 @@ Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes
 Se você encontrar algum problema ou tiver sugestões:
 
 1. **Consulte a documentação** primeiro:
-   - [Guia Completo do Usuário](GUIA-USUARIO-LEIGO.md)
-   - [Guia Rápido](GUIA-RAPIDO.md)
-   - [Exemplo Prático](EXEMPLO-PRATICO.md)
+   - [Guia Completo do Usuário](documentações%20para%20usuários/GUIA-USUARIO-LEIGO.md)
+   - [Guia Rápido](documentações%20para%20usuários/GUIA-RAPIDO.md)
+   - [Exemplo Prático](documentações%20para%20usuários/EXEMPLO-PRATICO.md)
 
 2. **Se ainda tiver dúvidas**:
    - Abra uma issue no GitHub
