@@ -2,12 +2,12 @@
 
 **Grave ações do usuário e gere testes Cypress automaticamente com inteligência artificial para seletores!**
 
-## 📚 Documentação Completa
+## 📚 Documentação Completa 
 
 ### 🆕 Para Usuários Leigos (Recomendado)
-- **[📖 Guia Completo do Usuário](documentações%20para%20usuários/GUIA-COMPLETO-USUARIO.md)** - Documentação detalhada e amigável
-- **[⚡ Guia Rápido](documentações%20para%20usuários/GUIA-RAPIDO.md)** - Referência rápida para consulta
-- **[🎯 Exemplo Prático](documentações%20para%20usuários/EXEMPLO-PRATICO.md)** - Tutorial passo a passo
+- **[📖 Guia Completo do Usuário](Doc\GUIA-COMPLETO-USUARIO.md)** - Documentação detalhada e amigável
+- **[⚡ Guia Rápido](Doc/GUIA-RAPIDO.md)** - Referência rápida para consulta
+- **[🎯 Exemplo Prático](Doc/EXEMPLO-PRATICO.md)** - Tutorial passo a passo
 
 ### 🔧 Para Desenvolvedores
 - **[📋 Documentação Técnica](explicacao-tecnica.md)** - Detalhes técnicos e arquitetura
