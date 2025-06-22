@@ -392,5 +392,3 @@ Agora você sabe tudo sobre o CyRecord! Com essas informações, você pode:
 2. **Experimente** diferentes tipos de asserções
 3. **Teste** os códigos gerados
 4. **Compartilhe** suas experiências com outros usuários
-
-**Lembre-se**: A prática leva à perfeição! Quanto mais você usar o CyRecord, melhor você ficará em criar testes automatizados de qualidade.
