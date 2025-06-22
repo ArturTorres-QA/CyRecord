@@ -5,7 +5,7 @@
 ## 📚 Documentação Completa
 
 ### 🆕 Para Usuários Leigos (Recomendado)
-- **[📖 Guia Completo do Usuário](documentações%20para%20usuários/GUIA-USUARIO-LEIGO.md)** - Documentação detalhada e amigável
+- **[📖 Guia Completo do Usuário](documentações%20para%20usuários/GUIA-COMPLETO-USUARIO.md)** - Documentação detalhada e amigável
 - **[⚡ Guia Rápido](documentações%20para%20usuários/GUIA-RAPIDO.md)** - Referência rápida para consulta
 - **[🎯 Exemplo Prático](documentações%20para%20usuários/EXEMPLO-PRATICO.md)** - Tutorial passo a passo
 
