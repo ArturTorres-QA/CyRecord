@@ -98,6 +98,8 @@ describe('Teste de Login', () => {
 
 ## 🎯 Exemplos de Diferentes Tipos de Seletores
 
+O CyRecord usa um **sistema de regras** que analisa cada elemento e atribui pontuações baseadas em critérios predefinidos:
+
 ### Exemplo 1: Elemento com data-cy (100 pontos)
 ```html
 <button data-cy="submit-button">Enviar</button>

@@ -26,7 +26,7 @@ O **CyRecord** é uma ferramenta que transforma suas ações no navegador em có
 - ✅ **Navegação** entre páginas
 
 ### 🧠 O que torna ele especial:
-- **Inteligência Artificial**: Escolhe automaticamente a melhor forma de identificar cada elemento
+- **Sistema Inteligente**: Escolhe automaticamente a melhor forma de identificar cada elemento usando regras de pontuação
 - **Qualidade**: Gera testes mais estáveis e confiáveis
 - **Facilidade**: Você não precisa saber programar para usar!
 
@@ -166,6 +166,8 @@ Se quiser ver outras opções:
 Um **seletor** é como o CyRecord "encontra" um elemento na página. É como um endereço que diz "procure por este elemento específico".
 
 ### Sistema de Pontuação (0-100 pontos)
+
+O CyRecord usa um **sistema de regras** que analisa cada elemento e atribui pontuações baseadas em critérios predefinidos:
 
 #### 🟢 **Alta Qualidade (80-100 pontos)**
 **Muito estáveis e confiáveis**

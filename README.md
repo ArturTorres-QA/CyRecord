@@ -1,6 +1,6 @@
 # CyRecord 🎯
 
-**Grave ações do usuário e gere testes Cypress automaticamente com inteligência artificial para seletores!**
+**Grave ações do usuário e gere testes Cypress automaticamente com sistema inteligente de seletores!**
 
 ## 📚 Documentação Completa 
 
@@ -11,7 +11,8 @@
 
 ### 🔧 Para Desenvolvedores
 - **[📋 Documentação Técnica](explicacao-tecnica.md)** - Detalhes técnicos e arquitetura
-- **[📄 Manifest](manifest-documentation.md)** - Documentação do manifest.json
+- **[📄 Manifest](manifest-documentation.md)** - Documentação do manifest
+- **[🔍 Transparência Técnica](TRANSPARENCIA-TECNICA.md)** - Como o sistema de seletores realmente funciona
 
 ---
 
@@ -19,7 +20,7 @@
 
 O CyRecord é uma extensão para o Google Chrome que grava automaticamente suas ações em uma página web (cliques, digitação, etc.) e gera comandos Cypress prontos para uso em testes automatizados. 
 
-**Destaque especial**: O CyRecord usa inteligência artificial para escolher o melhor seletor possível para cada elemento, garantindo testes mais robustos e estáveis!
+**Destaque especial**: O CyRecord usa um sistema inteligente de regras para escolher o melhor seletor possível para cada elemento, garantindo testes mais robustos e estáveis!
 
 ## ✨ Funcionalidades Principais
 
@@ -28,8 +29,8 @@ O CyRecord é uma extensão para o Google Chrome que grava automaticamente suas 
 - **Inputs**: Registra digitação em campos de texto
 - **Asserções**: Adicione verificações com botão direito
 
-### 🧠 Sistema de IA para Seletores
-O CyRecord analisa cada elemento e escolhe o melhor seletor baseado em múltiplos critérios:
+### 🧠 Sistema Inteligente de Seletores
+O CyRecord analisa cada elemento e escolhe o melhor seletor baseado em um sistema de pontuação com múltiplos critérios:
 
 - **data-cy** (100 pontos) - Melhor prática para testes
 - **ID** (95 pontos) - Identificador único
@@ -40,7 +41,7 @@ O CyRecord analisa cada elemento e escolhe o melhor seletor baseado em múltiplo
 ### 🔍 Menu de Asserções Inteligente
 Quando você clica com o botão direito para adicionar uma asserção:
 
-1. **Análise automática** do elemento com IA
+1. **Análise automática** do elemento com sistema de pontuação
 2. **Pontuação de qualidade** do seletor (0-100)
 3. **Explicação detalhada** de por que aquele seletor foi escolhido
 4. **Botão "Ver alternativas"** para escolher entre diferentes opções
@@ -67,7 +68,7 @@ Veja todas as opções de seletores disponíveis:
 ### 3. Adicionando Asserções
 1. **Clique com o botão direito** em qualquer elemento
 2. Escolha o tipo de asserção desejado
-3. **Veja a qualidade do seletor** escolhido pela IA
+3. **Veja a qualidade do seletor** escolhido pelo sistema
 4. **Clique em "Ver alternativas"** se quiser outras opções
 
 ### 4. Gerando o Código
@@ -81,14 +82,14 @@ Veja todas as opções de seletores disponíveis:
 ```html
 <button data-cy="submit-button">Enviar</button>
 ```
-**IA escolhe**: `[data-cy="submit-button"]` (100 pontos)
+**Sistema escolhe**: `[data-cy="submit-button"]` (100 pontos)
 **Código gerado**: `cy.get('[data-cy="submit-button"]').click();`
 
 ### Exemplo 2: Elemento com ID
 ```html
 <input id="email" type="email" placeholder="Digite seu email">
 ```
-**IA escolhe**: `#email` (95 pontos)
+**Sistema escolhe**: `#email` (95 pontos)
 **Código gerado**: `cy.get('#email').type('teste@exemplo.com');`
 
 ### Exemplo 3: Elemento com classes específicas
@@ -97,7 +98,7 @@ Veja todas as opções de seletores disponíveis:
   <span class="user-name">João Silva</span>
 </div>
 ```
-**IA escolhe**: `.user-profile-card .user-name` (80 pontos)
+**Sistema escolhe**: `.user-profile-card .user-name` (80 pontos)
 **Código gerado**: `cy.get('.user-profile-card .user-name').should('have.text', 'João Silva');`
 
 ## 🔧 Tipos de Asserções Suportadas
@@ -116,9 +117,9 @@ Veja todas as opções de seletores disponíveis:
 - 🔗 **Deve ter valor** - `cy.get('selector').should('have.value', 'valor')`
 - 🏷️ **Deve ter atributo** - `cy.get('selector').should('have.attr', 'atributo', 'valor')`
 
-## 🧠 Como a IA Funciona
+## 🧠 Como o Sistema de Seletores Funciona
 
-O sistema de inteligência artificial do CyRecord avalia múltiplos fatores para escolher o melhor seletor:
+O sistema inteligente do CyRecord avalia múltiplos fatores para escolher o melhor seletor através de um algoritmo de pontuação:
 
 ### Critérios de Avaliação:
 1. **data-cy** (100 pontos) - Melhor prática para testes
@@ -158,7 +159,7 @@ O sistema de inteligência artificial do CyRecord avalia múltiplos fatores para
 
 ### Para Desenvolvedores
 - **Economia de tempo**: Gera testes automaticamente
-- **Qualidade**: Seletores robustos escolhidos por IA
+- **Qualidade**: Seletores robustos escolhidos por sistema inteligente
 - **Flexibilidade**: Escolha entre diferentes opções
 - **Transparência**: Entenda por que cada seletor foi escolhido
 
@@ -176,7 +177,7 @@ CyRecord/
 ├── popup.html            # Interface do popup
 ├── popup.js              # Lógica do popup
 ├── content.js            # Script injetado na página
-├── injectPanel.js        # Painel flutuante com IA
+├── injectPanel.js        # Painel flutuante com sistema de seletores
 ├── background.js         # Script de background
 ├── explicacao-tecnica.md # Documentação técnica detalhada
 ├── manifest-documentation.md # Documentação do manifest
@@ -220,4 +221,4 @@ Se você encontrar algum problema ou tiver sugestões:
 
 **Desenvolvido com ❤️ para a comunidade de testes automatizados!**
 
-🎯 **CyRecord** - Transforme suas ações em testes Cypress com inteligência artificial!
+🎯 **CyRecord** - Transforme suas ações em testes Cypress com sistema inteligente de seletores!

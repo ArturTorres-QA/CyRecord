@@ -11,9 +11,9 @@ O CyRecord é uma extensão para o Google Chrome que grava automaticamente as a�
 - **Inputs**: Registra digitação em campos de texto
 - **Asserções**: Permite adicionar verificações através do botão direito
 
-### 2. Sistema de Seletores Inteligente (IA)
+### 2. Sistema de Seletores Inteligente (Baseado em Regras)
 
-O CyRecord implementa um sistema de inteligência artificial para escolher o melhor seletor possível para cada elemento. O sistema funciona através de um algoritmo de pontuação que avalia múltiplos fatores:
+O CyRecord implementa um sistema inteligente para escolher o melhor seletor possível para cada elemento. O sistema funciona através de um algoritmo de pontuação que avalia múltiplos fatores usando regras predefinidas:
 
 #### Critérios de Avaliação (em ordem de prioridade):
 
@@ -37,7 +37,7 @@ O CyRecord implementa um sistema de inteligência artificial para escolher o mel
 
 Quando o usuário clica com o botão direito para adicionar uma asserção, o sistema:
 
-1. **Analisa o elemento** usando o algoritmo de IA
+1. **Analisa o elemento** usando o algoritmo de pontuação
 2. **Mostra a qualidade do seletor** com pontuação visual (0-100)
 3. **Explica a escolha** com detalhes sobre por que aquele seletor foi selecionado
 4. **Permite ver alternativas** através do botão "Ver alternativas de seletor"
@@ -65,7 +65,7 @@ CyRecord/
 ├── popup.html            # Interface do popup
 ├── popup.js              # Lógica do popup
 ├── content.js            # Script injetado na página
-├── injectPanel.js        # Painel flutuante com IA
+├── injectPanel.js        # Painel flutuante com sistema de seletores
 ├── background.js         # Script de background
 └── icons/                # Ícones da extensão
 ```
@@ -74,12 +74,12 @@ CyRecord/
 
 1. **Inicialização**: O `injectPanel.js` é injetado na página
 2. **Gravação**: Event listeners capturam cliques e inputs
-3. **Seletores IA**: `getSelectorForAssertion()` analisa elementos
+3. **Seletores**: `getSelectorForAssertion()` analisa elementos usando regras
 4. **Menu Contextual**: Botão direito abre menu de asserções
 5. **Alternativas**: Modal mostra opções de seletores
 6. **Geração**: `generateCypressCode()` cria código final
 
-### Algoritmo de IA para Seletores:
+### Algoritmo de Seletores (Baseado em Regras):
 
 ```javascript
 function getSelectorForAssertion(element) {
@@ -103,7 +103,7 @@ function getSelectorForAssertion(element) {
     });
   }
   
-  // ... continua com outros critérios
+  // ... continua com outras regras predefinidas
   
   // Ordena por pontuação e retorna o melhor
   selectorCandidates.sort((a, b) => b.score - a.score);
@@ -111,7 +111,7 @@ function getSelectorForAssertion(element) {
 }
 ```
 
-## Benefícios da IA
+## Benefícios do Sistema de Regras
 
 ### 1. Seletores Mais Robustos
 - Prioriza seletores estáveis e específicos
@@ -175,8 +175,20 @@ function getSelectorForAssertion(element) {
 - Sistema modular para diferentes tipos de elementos
 - Configuração flexível de pontuações
 
+## Limitações e Considerações
+
+### O que o sistema NÃO é:
+- **Não é IA real**: Não usa machine learning ou redes neurais
+- **Não aprende**: As regras são fixas e não se adaptam automaticamente
+- **Não é determinístico**: Pode produzir resultados diferentes em contextos similares
+
+### O que o sistema É:
+- **Sistema de heurísticas**: Usa regras de negócio bem definidas
+- **Algoritmo de pontuação**: Atribui scores baseados em critérios predefinidos
+- **Ferramenta inteligente**: Simula inteligência através de regras estruturadas
+
 ## Conclusão
 
-O sistema de IA do CyRecord representa um avanço significativo na geração automática de seletores para testes. Ao combinar múltiplos critérios de avaliação com transparência total para o usuário, a ferramenta garante que os testes gerados sejam robustos, mantíveis e confiáveis.
+O sistema de seletores do CyRecord representa uma abordagem prática e eficaz para a geração automática de seletores para testes. Ao combinar múltiplos critérios de avaliação com transparência total para o usuário, a ferramenta garante que os testes gerados sejam robustos, mantíveis e confiáveis.
 
-A capacidade de ver e escolher entre diferentes alternativas de seletores dá ao usuário controle total sobre o processo, enquanto a pontuação automática orienta para as melhores práticas de teste automatizado. 
+A capacidade de ver e escolher entre diferentes alternativas de seletores dá ao usuário controle total sobre o processo, enquanto a pontuação automática orienta para as melhores práticas de teste automatizado. Embora não seja uma IA real, o sistema oferece funcionalidade inteligente através de regras bem estruturadas e heurísticas eficazes. 

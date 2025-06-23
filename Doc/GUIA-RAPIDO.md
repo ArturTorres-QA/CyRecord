@@ -52,6 +52,8 @@
 
 ## 🎨 Qualidade dos Seletores
 
+O CyRecord usa um **sistema de regras** que analisa cada elemento e atribui pontuações baseadas em critérios predefinidos:
+
 ### 🟢 Alta Qualidade (80-100 pontos)
 - **100 pts** - `data-cy` (melhor opção)
 - **95 pts** - `ID` (identificador único)
@@ -110,4 +112,4 @@
 
 ---
 
-**🎯 CyRecord - Transforme suas ações em testes Cypress com IA!** 
+**🎯 CyRecord - Transforme suas ações em testes Cypress com sistema inteligente de seletores!** 
